@@ -1,0 +1,68 @@
+# ------------------------
+# Node & dependencies
+# ------------------------
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------
+# Environment files
+# ------------------------
+.env
+**/.env
+.env.local
+.env.*.local
+
+# ------------------------
+# Build outputs
+# ------------------------
+dist/
+build/
+**/dist/
+**/build/
+
+# ------------------------
+# Docker files & volumes
+# ------------------------
+*.pid
+*.log
+*.tar
+*.pid.lock
+.dockerignore
+docker-compose.override.yml
+
+# ------------------------
+# OS / Editor junk
+# ------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# ------------------------
+# Optional caches
+# ------------------------
+.cache/
+*.cache
+tmp/
+temp/
+
+# ------------------------
+# Vercel / Deployment
+# ------------------------
+.vercel
+.vercel_build_output/
+*.vercel.json
+
+# ------------------------
+# Local environment backups
+# ------------------------
+*.bak
+*.old
+*.orig
+*.tmp

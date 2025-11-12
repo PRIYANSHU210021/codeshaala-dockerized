@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  server:
+    build: ./Server
+    container_name: server-image
+    ports:
+      - "3000:3000"
+    networks:
+      - fullstack-net
+    restart: unless-stopped    
+
+  client:
+    build: ./Client
+    container_name: client-image
+    ports:
+      - "5173:3000"
+    networks:
+      - fullstack-net
+    depends_on: 
+      - server  
+    restart: unless-stopped  
+
+networks:
+  fullstack-net:
+    driver: bridge
