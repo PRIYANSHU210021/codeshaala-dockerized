@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   server:
+    image: priyanshu006/codeshaala-backend:latest
     build: ./Server
     container_name: server-image
     ports:
@@ -11,6 +12,7 @@ services:
     restart: unless-stopped    
 
   client:
+    image: priyanshu006/codeshaala-frontend:latest
     build: ./Client
     container_name: client-image
     ports:
